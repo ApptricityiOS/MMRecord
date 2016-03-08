@@ -121,7 +121,7 @@
     NSMutableArray *records = [NSMutableArray array];
     
     for (MMRecordProtoRecord *protoRecord in self.objectGraph) {
-        if (protoRecord.record == nil) break;
+        if (protoRecord.record == nil) continue;
         [records addObject:protoRecord.record];
     }
     

@@ -104,6 +104,8 @@
         value = [self boolValueForAttribute:attribute value:rawValue];
     } else if (attributeType == NSStringAttributeType) {
         value = [self stringValueForAttribute:attribute value:rawValue];
+    }else if (attributeType == NSFloatAttributeType) {
+        value = [self numberValueForAttribute:attribute value:rawValue];
     }
     
     return value;
